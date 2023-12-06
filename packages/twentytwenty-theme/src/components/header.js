@@ -6,6 +6,7 @@ import SearchModal from "./search/search-modal";
 import MobileSearchButton from "./mobile/search-button";
 import MobileMenuButton from "./mobile/menu-button";
 import MobileMenuModal from "./mobile/menu-modal";
+import { ButtonGroup, Card, Form, InputGroup } from "react-bootstrap";
 
 const Header = ({ state }) => {
   const { title, description } = state.frontity;
@@ -33,9 +34,21 @@ const Header = ({ state }) => {
 
         <HeaderNavigationWrapper>
           {/* Desktop navigation links */}
+          <Card className="d-flex bg-0 justify-content-between">
           <Navigation />
           {/* Desktop search button */}
-          {state.theme.showSearchInHeader && <SearchButton />}
+          <SearchButton />
+
+          <InputGroup className="mb-3">
+            <InputGroup.Text id="basic-addon1">@</InputGroup.Text>
+            <Form.Control
+              placeholder="Username"
+              aria-label="Username"
+              aria-describedby="basic-addon1"
+            />
+          </InputGroup>
+          </Card>
+
         </HeaderNavigationWrapper>
       </HeaderInner>
       {/* Global search modal */}

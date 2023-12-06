@@ -2,9 +2,9 @@ const settings = {
   "name": "turbinasmcbo-project",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "url": "https://turbinasmaracaibo.com/",
+      "title": "Turbinas Maracaibo C.A.",
+      "description": "Reparación de convertidores de par para clientes exigentes que buscan calidad"
     }
   },
   "packages": [
@@ -18,8 +18,8 @@ const settings = {
               "/"
             ],
             [
-              "Nature",
-              "/category/nature/"
+              "¿Quienes Somos?",
+              "/quienes-somos-2/"
             ],
             [
               "Travel",
@@ -45,7 +45,7 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "api": "https://turbinasmaracaibo.com/wp-json"
         }
       }
     },
